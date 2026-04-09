@@ -643,6 +643,24 @@ footer {
       display: flex;
       
     }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease;
+      z-index: 10;
+    }
+
+    #menu-toggle:checked ~ .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   .hero {
@@ -659,7 +677,7 @@ footer {
       }
     }
 
-    .scond-card{
+    .second-card{
       .box {
         font-size: 14px;
         padding: 10px 15px;
