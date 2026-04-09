@@ -291,9 +291,10 @@ nav {
 .destination {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   height: 330px;
   gap: 10px;
+  overflow: hidden;
+  cursor: pointer;
   border-radius: var(--radius);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   background: linear-gradient(to bottom right, var(--tertiary), var(--primary));
