@@ -16,7 +16,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -105,21 +105,39 @@ img {
   }
 }
 
+/*****TOGGLE*****/
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 /***** NAV *****/
 nav {
   display: flex;
   gap: 10px;
 
-  a {
-    text-decoration: none;
-    color: var(--secondary);
-    font-size: 20px;
-    font-weight: 700;
-  }
+  ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
 
-  a:hover {
-    color: var(--accent);
-    text-shadow: -1px 1px 1px var(--primary);
+    li a {
+      text-decoration: none;
+      color: var(--secondary);
+      font-size: 20px;
+      font-weight: 700;
+      
+    }
+
+    li a:hover {
+      color: var(--accent);
+      text-shadow: -1px 1px 1px var(--primary);
+    }
   }
 }
 
@@ -155,7 +173,7 @@ nav {
 
 .hero{
   display: flex;
-  height: 650px;
+  height: 720px;
   align-items: center;
   scroll-margin-top: 85px;
 }
@@ -164,7 +182,7 @@ nav {
    CARDS HERO
 ========================= */
 .card {
-  height: 500px;
+  height: 550px;
   padding: 30px;
   border-radius: var(--radius);
   background: linear-gradient(to bottom right, var(--tertiary), var(--primary));
@@ -198,7 +216,7 @@ nav {
   display: flex;
   flex-direction: column;
   color: var(--secondary);
-  gap: 20px;
+  gap: 15px;
 
   h2{
     font-size: 30px;
@@ -270,7 +288,7 @@ nav {
 ========================= */
 
 #destinos {
-  height: 1200px;
+  height: 1250px;
   scroll-margin-top: 70px;
   text-shadow: -1px 1px 1px var(--cuaternary);
 }
@@ -346,7 +364,7 @@ nav {
 #info{
   display: flex;
   align-items: center;
-  height: 680px;
+  height: 740px;
   scroll-margin-top: 70px;
 
   .info-list ul{
@@ -388,7 +406,7 @@ nav {
 ========================= */
 
 #contacto{
-  height: 660px;
+  height: 740px;
   color: var(--cuaternary);
 
   .form-box{
@@ -434,13 +452,6 @@ nav {
   }
 }
 
-
-
-
-
-
-
-
 /* =========================
    FOOTER
 ========================= */
@@ -471,3 +482,262 @@ footer {
   }
 }
 
+/* ===========TABLET============== */
+@media (max-width: 1024px) {
+
+  header {
+    .logo {
+      gap: 20px;
+      .logo-icon{
+        width:30px;
+      }
+
+      .logo-text {
+        font-size: 14px;
+      }
+    }
+
+    nav ul li a{
+      font-size: 14px;
+    }
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero {
+    scroll-margin-top: 110px;
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    padding: 40px 0;
+
+    .first-card {
+      width: 100%;
+      text-align: center;
+
+      h2 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+
+    .second-card{
+      .buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+      }
+    }
+
+    .card {
+      height: auto;
+
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #destinos {
+    scroll-margin-top: 80px;
+    height: auto;
+
+    .container {
+      height: auto;
+    }
+  }
+
+  #info {
+    scroll-margin-top: 80px;
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+
+    .info-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .info-list {
+      ul {
+        gap: 30px;
+      }
+    }
+  }
+
+  #contacto {
+    height: 800px;
+  }
+}
+
+/* ===========MÓVIL============== */
+
+@media (max-width: 768px) {
+
+  .header {
+    height: auto;
+
+    .header-content {
+      position: relative;
+      justify-content: center;
+      height: auto;
+      padding: 10px 20px;
+      gap: 10%;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+
+    nav {
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+      padding: 20px 0;
+      background: var(--tertiary);
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        li {
+          display: block;
+          text-align: center;
+          padding: 10px;
+          margin: 0px 10px;
+          border-radius: var(--radius)
+        }
+
+        li:hover {
+          
+          background: var(--primary);
+        }
+
+        a:hover {
+          text-shadow: -1px 1px 1px var(--primary);
+        }
+      }
+    }
+
+    #menu-toggle:checked ~ nav {
+      display: flex;
+      
+    }
+  }
+
+  .hero {
+    padding: 20px 0;
+
+    .first-card {
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .scond-card{
+      .box {
+        font-size: 14px;
+        padding: 10px 15px;
+
+        span:first-of-type {
+          font-size: 40px;
+        }
+
+        span:nth-of-type(2) {
+          font-size: 20px;
+          top: 10px;
+        }
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+
+  
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .destination {
+    height: auto;
+
+    img {
+      height: 160px;
+    }
+  }
+
+  #info{
+    scroll-margin-top: 100px;
+
+    .info-list {
+      ul {
+        gap: 30px;
+
+        li {
+
+          p {
+            font-size: 16px;
+          }
+
+          p:first-child {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  #contacto {
+    scroll-margin-top: 100px;
+
+    .form-box {
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  footer {
+    .footer-content {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  }
+}
