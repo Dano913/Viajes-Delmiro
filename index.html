@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viajes Delmiro</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="background"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+
+      <div class="logo">
+        <div class="logo-icon">
+            <img src="images/metalicLogo.png" alt="Logo de Viajes Delmiro">
+        </div>
+        <div class="logo-text">
+          <h1>Viajes Delmiro</h1>
+          <p>Haz negocio con tus hijos y visita el mundo entero</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#hero">Inicio</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#info">Cómo funciona</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container grid-2">
+
+        <div class="card first-card">
+          <h2>¿Quieres viajar gratis?</h2>
+          <img src="images/bebeGrafica.png" alt="Logo de Viajes Delmiro">
+          <p>¡Capitaliza el talento de tus hijos!</p>
+        </div>
+
+        <div class="card second-card">
+          <h2>Acumula descuentos</h2>
+          <div id="boxes">
+            <div class="box"><span>10</span><span>%</span> cada hijo</div>
+            <div class="box"><span>20</span><span>%</span> cada par de mellizos</div>
+            <div class="box"><span>30</span><span>%</span> cada par de gemelos</div>
+          </div>
+          <div class="buttons">
+            <a href="#destinos">Ver destinos</a>
+            <a href="#info">Viaja gratis</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DESTINOS -->
+    <section id="destinos" class="section light">
+      <div class="container">
+        <h2 class="title">Destinos populares</h2>
+        <div class="grid-3">
+            <div class="destination">
+                <img src="images/islaMuñecas.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Isla de las Muñecas</h3>
+                    <span>199€</span>
+                </div>
+                <p>Estas muñecas soportan a tu cuñado</p>
+            </div>
+
+            <div class="destination">
+                <img src="images/danakil.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Desierto de Danakil</h3>
+                    <span>499€</span>
+                </div>
+                <p>El lugar más caliente del planeta</p>
+            </div>
+
+            <div class="destination">
+                <img src="images/pipryat.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Pripyat</h3>
+                    <span>100€</span>
+                </div>
+                <p>Viaje a un pasado radiactivo</p>
+            </div>
+
+            <div class="destination">
+                <img src="images/socotra.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Socotra</h3>
+                    <span>899€</span>
+                </div>
+                <p>El planeta alienígena en la Tierra</p>
+            </div>
+
+            <div class="destination">
+                <img src="images/roraima.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Montaña Roraima</h3>
+                    <span>699€</span>
+                </div>
+                <p>El mundo perdido de los tepuyes</p>
+            </div>
+
+            <div class="destination">
+                <img src="images/natron.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Lago Natron</h3>
+                    <span>299€</span>
+                </div>
+                <p>Te quedas de piedra</p>
+            </div>
+
+            <div class="destination">
+                <img src="images/cuevaTayos.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Cueva de los Tayos</h3>
+                    <span>999€</span>
+                </div>
+                <p>La entrada al submundo</p>
+            </div>
+
+            <div class="destination">
+                <img src="images/hashima.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Isla Hashima</h3>
+                    <span>500€</span>
+                </div>
+                <p>Proyecto fallido de la II Guerra Mundial</p>
+            </div>
+
+            <div class="destination">
+                <img src="images/sentinelNorte.jpg"/>
+                <div id="containerCardDestinos">
+                    <h3>Isla Sentinel del Norte</h3>
+                    <span>0€</span>
+                </div>
+                <p>Te reciben con un flechazo en el pecho</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section id="info" class="section">
+      <div class="container grid-2">
+        <div class="info-list">
+            <ul>
+                <li>
+                    <p>Familias numerosas</p>
+                    <p>Reclutamos familias con niños, cuantos más mejor</p>
+                </li>
+                <li>
+                    <p>Espectaculos únicos</p>
+                    <p>Los bebes protagonizan espectáculos de riesgo extremo</p>
+                </li>
+                <li>
+                    <p>Financiación total</p>
+                    <p>El alojamiento y las actividades se financian con el sueldo recibido</p>
+                </li>
+                <li>
+                    <p>Ahorro garantizado</p>
+                    <p>Las cotizaciones se acumulan en una mochila suiza para próximos viajes</p>
+                </li>
+            </ul>
+        </div>
+        <img class="info-img"src="images/malabares.png"/>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section light">
+      <div class="container form-box">
+        <h2 class="title">Contacto</h2>
+        <input type="text" placeholder="Nombre"/>
+        <input type="email" placeholder="Email"/>
+        <textarea placeholder="Mensaje"></textarea>
+
+        <button class="submit">Enviar</button>
+
+        <div class="contact-info">
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                info@viajesdelmiro.com
+            </div>
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                +34 900 123 456
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>Viajes Delmiro © 2026</p>
+      <div>
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
